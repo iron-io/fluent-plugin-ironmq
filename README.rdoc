@@ -20,16 +20,16 @@ Read events from IronMQ.
     <match ironmq.**>
         type ironmq
 
-        # following attibutes are required
+        # following attributes are required
         project_id {your_project_id}
         token {your_token}
         queue_name {project_queue_name}
 
-        # following attibutes are optional
-        host {host}
-        delay_seconds {delay_seconds}
-        include_tag {include_tag_boolean}
-        tag_property_name {tag_name}
+        # following attributes are optional
+        host {host}                         #default = mq-aws-us-east-1.iron.io
+        delay_seconds {delay_seconds}       #default = 0 sec
+        include_tag {include_tag_boolean}   #default = true
+        tag_property_name {tag_name}        #default = '__tag'
     </match>
 
 === IronMQ Input
@@ -37,15 +37,15 @@ Read events from IronMQ.
     <source>
         type ironmq
 
-        # following attibutes are required
+        # following attributes are required
         project_id {your_project_id}
         token {your_token}
         queue_name {project_queue_name}
 
-        # following attibutes are optional
-        host {host}
-        receive_interval {receive_interval_seconds}
-        max_number_of_messages {get_n_message}
+        # following attributes are optional
+        host {host}                                     #default = mq-aws-us-east-1.iron.io
+        receive_interval {receive_interval_seconds}     #default = 1 sec
+        max_number_of_messages {get_n_message}          #default = 1
     </source>
     
 === HOST list
