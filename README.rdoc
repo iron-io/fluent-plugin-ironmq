@@ -46,8 +46,7 @@ Read events from IronMQ.
         host {host}
         receive_interval {receive_interval_seconds}
         max_number_of_messages {get_n_message}
-
-        ### HOST list ###
-        # {See all available hosts/clouds/regions}[http://dev.iron.io/mq/reference/clouds/]
     </source>
-
+    
+=== HOST list
+{See all available hosts/clouds/regions}[http://dev.iron.io/mq/reference/clouds/]
