@@ -10,7 +10,7 @@ module Fluent
     config_param :host, :string, :default => 'mq-aws-us-east-1.iron.io'
     config_param :queue_name, :string
     config_param :receive_interval, :time, :default => 1
-    config_param :max_number_of_messages, :integer, :default => 3
+    config_param :max_number_of_messages, :integer, :default => 1
 
     def configure(conf)
       super
