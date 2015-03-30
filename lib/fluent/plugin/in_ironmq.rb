@@ -52,7 +52,10 @@ module Fluent
               submit_event(message)
             end
           else
-            submit_event(@queue.get)
+            msg = @queue.get
+            if msg
+              submit_event(msg)
+            end            
           end
         rescue
           log.error "failed to emit or receive", :error => $!.to_s, :error_class => $!.class.to_s
