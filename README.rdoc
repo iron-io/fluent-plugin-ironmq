@@ -2,7 +2,7 @@
 
 == Install
  1. Install Fluentd: 
- http://docs.fluentd.org/v0.10/categories/installation
+ http://docs.fluentd.org/articles/quickstart
  
  2. Install Fluentd plugin for ironmq.
  $ gem install fluent-plugin-ironmq
