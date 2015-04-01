@@ -1,7 +1,15 @@
 = IronMQ input/output plugin for Fluentd
 
 == Install
+ 1. Install Fluentd: 
+ http://docs.fluentd.org/v0.10/categories/installation
+ 
+ 2. Install Fluentd plugin for ironmq.
  $ gem install fluent-plugin-ironmq
+ 
+ 3. Install iron_mq plugin:
+ sudo /usr/sbin/td-agent-gem install iron_mq (if you are using td-agent)
+ sudo /usr/lib/fluent/ruby/bin/fluent-gem install iron_mq (if you are using fluent ruby gem)
 
 == Component
 
@@ -41,6 +49,7 @@ Read events from IronMQ.
         project_id {your_project_id}
         token {your_token}
         queue_name {project_queue_name}
+        tag {tag_name}
 
         # following attributes are optional
         host {host}                                     #default = mq-aws-us-east-1.iron.io
