@@ -7,7 +7,7 @@
  2. Install Fluentd plugin for ironmq.
  $ gem install fluent-plugin-ironmq
  
- 3. Install iron_mq plugin:
+ 3. Install iron_mq:
  sudo /usr/sbin/td-agent-gem install iron_mq (if you are using td-agent)
  sudo /usr/lib/fluent/ruby/bin/fluent-gem install iron_mq (if you are using fluent ruby gem)
 
